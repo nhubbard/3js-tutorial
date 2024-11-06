@@ -2,6 +2,7 @@ import {
   WebGLRenderer,
   PerspectiveCamera,
   Scene,
+  HemisphereLight,
 } from "three";
 import './main.css';
 
@@ -21,3 +22,7 @@ camera.position.z = 2;
 
 // Step 6a: Create the scene
 const scene = new Scene();
+
+// Step 6b: Create a basic hemisphere light
+const light = new HemisphereLight(0xddeeff, 0x0f0e0d, 10);
+scene.add(light);
