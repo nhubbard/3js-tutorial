@@ -1,5 +1,6 @@
 import {
   WebGLRenderer,
+  PerspectiveCamera,
 } from "three";
 import './main.css';
 
@@ -12,3 +13,7 @@ const fov = 75;
 const aspect = 2;
 const near = 0.1;
 const far = 5;
+
+// Step 5b: Create the camera instance from our parameters
+const camera = new PerspectiveCamera(fov, aspect, near, far);
+camera.position.z = 2;
