@@ -6,6 +6,7 @@ import {
   SphereGeometry,
   PointLight,
   MeshStandardMaterial,
+  Mesh,
 } from "three";
 import './main.css';
 
@@ -42,3 +43,9 @@ const bulbMat = new MeshStandardMaterial({
   emissiveIntensity: 35,
   color: 0x000000,
 });
+
+// Step 7d: Set up the bulb light
+bulbLight.add(new Mesh(bulbGeometry, bulbMat));
+bulbLight.position.set(0, 2, 0);
+bulbLight.castShadow = true;
+scene.add(bulbLight);
