@@ -110,5 +110,6 @@ const resizeCanvasToDisplaySize = () => {
 
 // Step 13a: Scaffold the rendering loop
 const render = (time) => {
-
+  // Step 13b: Convert the time to seconds
+  time *= 0.001;
 };
