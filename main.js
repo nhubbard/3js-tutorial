@@ -7,6 +7,7 @@ import {
   PointLight,
   MeshStandardMaterial,
   Mesh,
+  BoxGeometry,
 } from "three";
 import './main.css';
 
@@ -49,3 +50,9 @@ bulbLight.add(new Mesh(bulbGeometry, bulbMat));
 bulbLight.position.set(0, 2, 0);
 bulbLight.castShadow = true;
 scene.add(bulbLight);
+
+// Step 8: Create a box geometry
+const boxWidth = 1;
+const boxHeight = 1;
+const boxDepth = 1;
+const geometry = new BoxGeometry(boxWidth, boxHeight, boxDepth);
