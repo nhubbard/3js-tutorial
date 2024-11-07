@@ -82,3 +82,10 @@ const getRandomColor = () => {
   // Step 10d: Shift the RGB values into a single number
   return (r << 16) | (g << 8) | b;
 };
+
+// Step 11: Create three cubes
+const cubes = [
+  makeInstance(geometry, getRandomColor(), 0),
+  makeInstance(geometry, getRandomColor(), -2),
+  makeInstance(geometry, getRandomColor(), 2)
+];
