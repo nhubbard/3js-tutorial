@@ -8,6 +8,7 @@ import {
   MeshStandardMaterial,
   Mesh,
   BoxGeometry,
+  MeshPhongMaterial,
 } from "three";
 import './main.css';
 
@@ -59,5 +60,7 @@ const geometry = new BoxGeometry(boxWidth, boxHeight, boxDepth);
 
 // Step 9a: Scaffold a cube generator
 const makeInstance = (geometry, color, x) => {
-
+  // Step 9b: Create the material and cube
+  const material = new MeshPhongMaterial({ color });
+  const cube = new Mesh(geometry, material);
 };
