@@ -63,4 +63,8 @@ const makeInstance = (geometry, color, x) => {
   // Step 9b: Create the material and cube
   const material = new MeshPhongMaterial({ color });
   const cube = new Mesh(geometry, material);
+  // Step 9c: Add, position, and return the cube
+  scene.add(cube);
+  cube.position.x = x;
+  return cube;
 };
