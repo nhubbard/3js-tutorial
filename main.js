@@ -125,4 +125,6 @@ const render = (time) => {
   });
   // Step 13g: Render the scene into the camera
   renderer.render(scene, camera);
+  // Step 13h: Request the next frame
+  requestAnimationFrame(render);
 };
