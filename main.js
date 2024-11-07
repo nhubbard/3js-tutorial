@@ -128,3 +128,6 @@ const render = (time) => {
   // Step 13h: Request the next frame
   requestAnimationFrame(render);
 };
+
+// Step 14: Request the first frame to be rendered!
+requestAnimationFrame(render);
