@@ -5,6 +5,7 @@ import {
   HemisphereLight,
   SphereGeometry,
   PointLight,
+  MeshStandardMaterial,
 } from "three";
 import './main.css';
 
@@ -34,3 +35,10 @@ const bulbGeometry = new SphereGeometry(0.02, 16, 8);
 
 // Step 7b: Create a point light for our bulb
 const bulbLight = new PointLight(0xffee88, 1, 100, 2);
+
+// Step 7c: Create a bulb material
+const bulbMat = new MeshStandardMaterial({
+  emissive: 0xffffee,
+  emissiveIntensity: 35,
+  color: 0x000000,
+});
