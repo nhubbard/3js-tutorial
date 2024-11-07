@@ -107,3 +107,8 @@ const resizeCanvasToDisplaySize = () => {
     camera.updateProjectionMatrix();
   }
 };
+
+// Step 13a: Scaffold the rendering loop
+const render = (time) => {
+
+};
