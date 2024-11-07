@@ -123,4 +123,6 @@ const render = (time) => {
     cube.rotation.x = rot;
     cube.rotation.y = rot;
   });
+  // Step 13g: Render the scene into the camera
+  renderer.render(scene, camera);
 };
