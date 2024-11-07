@@ -99,7 +99,9 @@ const resizeCanvasToDisplaySize = () => {
 
   // Step 12c: Check if the canvas has changed size
   if (canvas.width !== width || canvas.height !== height) {
-    // Step 12d: If so, resize the renderer
+    // Step 12d: Resize the renderer
     renderer.setSize(width, height, false);
+    // Step 12e: Change the camera's aspect ratio
+    camera.aspect = width / height;
   }
 };
