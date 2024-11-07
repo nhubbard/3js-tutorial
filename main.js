@@ -96,4 +96,9 @@ const resizeCanvasToDisplaySize = () => {
   const canvas = renderer.domElement;
   const width = canvas.clientWidth;
   const height = canvas.clientHeight;
+
+  // Step 12c: Check if the canvas has changed size
+  if (canvas.width !== width || canvas.height !== height) {
+    
+  }
 };
