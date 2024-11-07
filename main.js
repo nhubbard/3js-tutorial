@@ -118,5 +118,9 @@ const render = (time) => {
   cubes.forEach((cube, index) => {
     // Step 13e: Modify the speed of each cube
     const speed = 1 + index * 0.75;
+    // Step 13f: Set the rotation of each cube
+    const rot = time * speed;
+    cube.rotation.x = rot;
+    cube.rotation.y = rot;
   });
 };
