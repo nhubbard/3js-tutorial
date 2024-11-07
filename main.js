@@ -56,3 +56,8 @@ const boxWidth = 1;
 const boxHeight = 1;
 const boxDepth = 1;
 const geometry = new BoxGeometry(boxWidth, boxHeight, boxDepth);
+
+// Step 9a: Scaffold a cube generator
+const makeInstance = (geometry, color, x) => {
+
+};
