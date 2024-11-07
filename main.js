@@ -75,4 +75,8 @@ const getRandomColor = () => {
   const randomRange = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   };
+  // Step 10c: Get the RGB values
+  const r = randomRange(50, 200);
+  const g = randomRange(50, 200);
+  const b = randomRange(50, 200);
 };
