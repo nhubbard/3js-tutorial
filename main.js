@@ -68,3 +68,8 @@ const makeInstance = (geometry, color, x) => {
   cube.position.x = x;
   return cube;
 };
+
+// Step 10a: Scaffold a color generator
+const getRandomColor = () => {
+
+};
