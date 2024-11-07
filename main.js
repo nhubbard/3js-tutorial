@@ -114,4 +114,8 @@ const render = (time) => {
   time *= 0.001;
   // Step 13c: Resize the canvas
   resizeCanvasToDisplaySize();
+  // Step 13d: Loop over each cube
+  cubes.forEach((cube, index) => {
+
+  });
 };
