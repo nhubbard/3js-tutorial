@@ -116,6 +116,7 @@ const render = (time) => {
   resizeCanvasToDisplaySize();
   // Step 13d: Loop over each cube
   cubes.forEach((cube, index) => {
-
+    // Step 13e: Modify the speed of each cube
+    const speed = 1 + index * 0.75;
   });
 };
