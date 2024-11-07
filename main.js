@@ -3,6 +3,7 @@ import {
   PerspectiveCamera,
   Scene,
   HemisphereLight,
+  SphereGeometry,
 } from "three";
 import './main.css';
 
@@ -26,3 +27,6 @@ const scene = new Scene();
 // Step 6b: Create a basic hemisphere light
 const light = new HemisphereLight(0xddeeff, 0x0f0e0d, 10);
 scene.add(light);
+
+// Step 7a: Create a sphere geometry for a nicer-looking light
+const bulbGeometry = new SphereGeometry(0.02, 16, 8);
