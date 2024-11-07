@@ -92,5 +92,8 @@ const cubes = [
 
 // Step 12a: Scaffold the resize handler
 const resizeCanvasToDisplaySize = () => {
-
+  // Step 12b: Get the canvas properties
+  const canvas = renderer.domElement;
+  const width = canvas.clientWidth;
+  const height = canvas.clientHeight;
 };
