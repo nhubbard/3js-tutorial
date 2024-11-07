@@ -4,6 +4,7 @@ import {
   Scene,
   HemisphereLight,
   SphereGeometry,
+  PointLight,
 } from "three";
 import './main.css';
 
@@ -30,3 +31,6 @@ scene.add(light);
 
 // Step 7a: Create a sphere geometry for a nicer-looking light
 const bulbGeometry = new SphereGeometry(0.02, 16, 8);
+
+// Step 7b: Create a point light for our bulb
+const bulbLight = new PointLight(0xffee88, 1, 100, 2);
