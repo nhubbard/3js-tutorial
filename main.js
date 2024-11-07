@@ -79,4 +79,6 @@ const getRandomColor = () => {
   const r = randomRange(50, 200);
   const g = randomRange(50, 200);
   const b = randomRange(50, 200);
+  // Step 10d: Shift the RGB values into a single number
+  return (r << 16) | (g << 8) | b;
 };
