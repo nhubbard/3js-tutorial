@@ -103,5 +103,7 @@ const resizeCanvasToDisplaySize = () => {
     renderer.setSize(width, height, false);
     // Step 12e: Change the camera's aspect ratio
     camera.aspect = width / height;
+    // Step 12f: Update the camera's projection matrix
+    camera.updateProjectionMatrix();
   }
 };
