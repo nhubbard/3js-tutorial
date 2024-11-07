@@ -71,5 +71,8 @@ const makeInstance = (geometry, color, x) => {
 
 // Step 10a: Scaffold a color generator
 const getRandomColor = () => {
-
+  // Step 10b: Get a random number, constrained to a range
+  const randomRange = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  };
 };
