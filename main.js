@@ -89,3 +89,8 @@ const cubes = [
   makeInstance(geometry, getRandomColor(), -2),
   makeInstance(geometry, getRandomColor(), 2)
 ];
+
+// Step 12a: Scaffold the resize handler
+const resizeCanvasToDisplaySize = () => {
+
+};
